@@ -17,7 +17,7 @@ export default function Header({}: Props) {
   return (
     <div className="flex mt-10 justify-between">
       <div className="text-xl font-bold tracking-tight text-primary flex gap-2 items-center">
-        <Image
+        <img
           width={48}
           height={48}
           src="/logo.webp"
