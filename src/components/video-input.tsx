@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import data from "../data/video.json";
+import data from "../data/video_modified.json";
 import { Video } from "@/types/video";
 import { Button } from "./ui/button";
 import { Loader2, LoaderIcon } from "lucide-react";
@@ -87,7 +87,7 @@ export default function VideoInput({}: Props) {
       {isVideoShow && (
         <video
           poster={selectVideo?.poster}
-          src={selectVideo?.src}
+          src={selectVideo?.srcZh}
           controls
           preload="none"
           muted
