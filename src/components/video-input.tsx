@@ -39,7 +39,9 @@ export default function VideoInput({}: Props) {
 
   return (
     <div className="flex flex-col gap-3 mt-6 items-center">
-      <p>目前还未能自定义输入文本, 后面将支持, 请在下列描述中选择一个🌊</p>
+      <p>
+        目前还未支持自定义输入文本，但我们将在未来版本更新中加入此功能。敬请期待！
+      </p>
       <Select
         defaultValue={activePrompt}
         onValueChange={(v) => {

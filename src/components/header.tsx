@@ -36,7 +36,7 @@ export default function Header({}: Props) {
             <DialogHeader>
               <DialogTitle>Sora公众号-关注与我们取得联系</DialogTitle>
             </DialogHeader>
-            <img src="/wechat-yasuo.png" alt="wechat" />
+            <img src="/wechat2.png" alt="wechat" />
           </DialogContent>
         </Dialog>
 
