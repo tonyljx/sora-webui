@@ -12,11 +12,15 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
 import toast, { Toaster } from "react-hot-toast";
+import Link from "next/link";
 
 export default function Header({}: Props) {
   return (
-    <div className="flex mt-10 justify-between">
-      <div className="text-xl font-bold tracking-tight text-primary flex gap-2 items-center">
+    <div className="flex mt-10 justify-between z-10">
+      <Link
+        href="/"
+        className="text-xl font-bold tracking-tight text-primary flex gap-2 items-center"
+      >
         <img
           width={48}
           height={48}
@@ -25,7 +29,7 @@ export default function Header({}: Props) {
           className="rounded"
         />
         Sora Video
-      </div>
+      </Link>
 
       <div className="flex gap-2">
         <Dialog>

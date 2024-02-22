@@ -5,6 +5,7 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Sora Video Generation",
@@ -30,6 +31,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
