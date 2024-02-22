@@ -5,10 +5,13 @@ import { useRef } from "react";
 
 export default function Home() {
   // 创建视频引用
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   // 切换播放/暂停
   const togglePlayPause = () => {
     const video = videoRef.current;
+    if (!video) {
+      return;
+    }
     if (video.paused || video.ended) {
       video.play();
     } else {
