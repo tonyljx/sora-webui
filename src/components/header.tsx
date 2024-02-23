@@ -11,15 +11,15 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import Link from "next/link";
 
 export default function Header({}: Props) {
   return (
-    <div className="flex mt-10 justify-between z-10">
+    <div className="z-10 mt-10 flex justify-between">
       <Link
         href="/"
-        className="text-xl font-bold tracking-tight text-primary flex gap-2 items-center"
+        className="flex items-center gap-2 text-xl font-bold tracking-tight text-primary"
       >
         <img
           width={48}
@@ -31,22 +31,26 @@ export default function Header({}: Props) {
         Sora Video
       </Link>
 
-      <div className="flex gap-2">
+      <div className="flex items-center gap-2">
+        <Link
+          href="/price"
+          className="transition-all duration-150 hover:text-primary"
+        >
+          付款方案
+        </Link>
         <Dialog>
-          <DialogTrigger className="p-2 hover:bg-slate-200/85 transition-colors duration-150 rounded">
-            <Icons.wechat className="w-[24px] h-[24px]" />
+          <DialogTrigger className="rounded p-2 transition-colors duration-150 hover:bg-slate-200/85">
+            <Icons.wechat className="h-[24px] w-[24px]" />
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Sora公众号-关注与我们取得联系</DialogTitle>
             </DialogHeader>
-            <img src="/wechat2.png" alt="wechat" />
+            <img src="/wechat.jpg" alt="wechat" />
           </DialogContent>
         </Dialog>
 
         <Button onClick={() => toast.error("暂未支持")}>登录</Button>
-
-        <Toaster />
       </div>
     </div>
   );
