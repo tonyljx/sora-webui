@@ -6,6 +6,7 @@ import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Sora Video Generation",
@@ -32,6 +33,11 @@ export default function RootLayout({
       >
         {children}
         <Footer />
+        <Script
+          async
+          src="https://umami.runningpig.top/script.js"
+          data-website-id="83e47a06-f115-491b-aa69-a74717726abb"
+        ></Script>
       </body>
     </html>
   );

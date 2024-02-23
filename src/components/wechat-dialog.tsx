@@ -27,9 +27,9 @@ export default function WechatDialog({}: Props) {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Sora公众号-关注与我们取得联系</DialogTitle>
+            <DialogTitle>请加下方 Sora 官方微信账号</DialogTitle>
           </DialogHeader>
-          <img src="/wechat.jpg" alt="wechat" />
+          <img src="/wechat-personal.jpg" alt="wechat" />
         </DialogContent>
       </Dialog>
     </div>
