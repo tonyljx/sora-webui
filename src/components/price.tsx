@@ -26,6 +26,7 @@ export default function Price({ className }: PriceProps) {
       price: "¥58",
       desc: "Free to use",
       features: ["无限视频生成", "高清视频导出"],
+      priceSrc: "ali-month.jpg",
     },
     {
       plan: "季度计划",
@@ -36,6 +37,7 @@ export default function Price({ className }: PriceProps) {
         "优先视频处理队列",
         "提示词引导教程, 激发视频创意",
       ],
+      priceSrc: "ali-quarter.jpg",
     },
     {
       plan: "年度计划",
@@ -47,6 +49,7 @@ export default function Price({ className }: PriceProps) {
         "个性化视频建议",
       ],
       popular: true,
+      priceSrc: "ali-year.jpg",
     },
   ];
 
@@ -130,7 +133,7 @@ export default function Price({ className }: PriceProps) {
               ))}
             </ul>
 
-            <WechatDialog />
+            <WechatDialog src={item.priceSrc} />
           </div>
         ))}
       </div>

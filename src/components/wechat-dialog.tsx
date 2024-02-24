@@ -1,6 +1,9 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  children?: React.ReactNode;
+  src: string;
+};
 import {
   Dialog,
   DialogContent,
@@ -12,7 +15,7 @@ import { Icons } from "./icons";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
-export default function WechatDialog({}: Props) {
+export default function WechatDialog({ src }: Props) {
   return (
     <div>
       <Dialog>
@@ -27,9 +30,17 @@ export default function WechatDialog({}: Props) {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>请加下方 Sora 官方微信账号</DialogTitle>
+            <DialogTitle>付款完成后, 请加下方 Sora 官方微信账号</DialogTitle>
           </DialogHeader>
-          <img src="/wechat-personal.jpg" alt="wechat" />
+          <div className="flex flex-col">
+            <img src={src} alt="wechat" width={300} height={300} />
+            <img
+              src="/wechat-personal.jpg"
+              alt="wechat"
+              width={300}
+              height={300}
+            />
+          </div>
         </DialogContent>
       </Dialog>
     </div>
