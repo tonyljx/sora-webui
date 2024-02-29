@@ -35,7 +35,7 @@ export default function WechatDialog({ src }: Props) {
           <div className="flex flex-col">
             <img src={src} alt="wechat" width={300} height={300} />
             <img
-              src="/wechat-personal.jpg"
+              src="/wechat-personal2.jpg"
               alt="wechat"
               width={300}
               height={300}
