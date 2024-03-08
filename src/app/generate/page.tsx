@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import VideoInput from "@/components/video-input";
+import { FAQ } from "./_component/faq";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
 
         <VideoInput />
       </div>
+
+      {/* <FAQ /> */}
 
       {/* <Footer /> */}
     </main>
