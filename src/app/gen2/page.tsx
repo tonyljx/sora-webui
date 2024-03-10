@@ -53,7 +53,7 @@ export default function SubmitPage() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(values),
+      body: JSON.stringify({ ...values }),
     })
       .then((res) => {
         if (!res.ok) {
