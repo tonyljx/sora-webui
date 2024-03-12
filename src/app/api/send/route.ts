@@ -2,7 +2,7 @@ import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
+resend.domains.create({ name: 'sora.gpthanghai.com' });
 export async function POST(request: Request) {
   const requestJson = await request.json();
 
