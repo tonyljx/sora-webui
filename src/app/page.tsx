@@ -23,7 +23,7 @@ export default function Home() {
       <section className="relative flex  h-[100vh]  items-center bg-[color:var(--gray-900)] md:-mt-40">
         {/* -mt-64 md:-mt-80 */}
         {/* <Header /> */}
-        <video
+        {/* <video
           className="absolute left-0 top-0 z-0 h-full w-full object-cover"
           src="https://ai-pdf-1259317192.cos.ap-beijing.myqcloud.com/paper-planes.mp4"
           autoPlay
@@ -31,7 +31,12 @@ export default function Home() {
           muted
           playsInline
           ref={videoRef} // 使用 ref
-        ></video>
+        ></video> */}
+
+        <img
+          src="https://code-write.oss-cn-beijing.aliyuncs.com/pic_bed/202403231917600.png"
+          className="absolute left-0 top-0 z-0 h-full w-full object-cover"
+        />
 
         <div className="container relative flex flex-col gap-8 pb-9 pt-7 text-center font-sans text-slate-100 ">
           <h1 className="sr-only">Sora</h1>
