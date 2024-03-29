@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
   try {
     const data = await resend.emails.send({
-      from: "sora.gpthanghai.com",
+      from: "money@sora.gpthanghai.com",
       to: ["1520007808@qq.com"],
       subject: "Hello world",
       text: "Hello world",
