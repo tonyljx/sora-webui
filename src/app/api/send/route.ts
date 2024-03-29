@@ -2,7 +2,7 @@ import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-resend.domains.create({ name: 'sora.gpthanghai.com' });
+resend.domains.create({ name: "sora.gpthanghai.com" });
 export async function POST(request: Request) {
   const requestJson = await request.json();
 
@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
   try {
     const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
+      from: "sora.gpthanghai.com",
       to: ["1520007808@qq.com"],
       subject: "Hello world",
       text: "Hello world",
